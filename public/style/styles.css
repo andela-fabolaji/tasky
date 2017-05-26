@@ -1,0 +1,286 @@
+* {
+  padding: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+}
+
+ul { list-style: none; }
+
+li { display: block; }
+
+.score-list {
+  height: 100px;
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 3px;
+  background: #f6f6f6;
+  margin-top: 20px;
+  padding: 10px;
+  line-height: 1.5rem;
+}
+
+.task-completed {
+  text-decoration-line: line-through;
+  color: #bfbfbf;
+}
+
+/* error */
+
+.error {
+  background: #fff;
+  color: red;
+  border-radius: 3px;
+  padding: 15px;
+  border: 1px solid #bfbfbf;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.error:hover {
+  background: #f2f2f2;
+}
+
+/* links */
+.links {
+  border-bottom: 1px solid #e2e2e2;
+  width: 100%;
+  background: #fff;
+  height: 50px;
+  line-height: 50px;
+}
+
+.links ul {
+  list-style: none;
+}
+
+.links li {
+  display: inline;
+}
+
+.links a {
+  text-decoration: none;
+  color: #858585;
+  display: block;
+  height: 50px;
+  float: left;
+  padding: 0 10px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.links a:hover, .active {
+  color: black !important;
+  border-bottom: 2px solid red;
+}
+
+/* 404 */
+.not-found {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.not-found h1 {
+  font-size: 5em;
+  color: #0c3e8e;
+}
+
+.not-found h6 {
+  font-weight: lighter;
+  display: block;
+  position: relative;
+  top: -50px;
+}
+
+.not-found button {
+  height: 50px;
+  width: 100px;
+  border: 1px solid #f2f2f2;
+  border-radius: 5px;
+  background: #fff;
+
+}
+
+.not-found button:hover {
+  background: #f2f2f2;
+  border-color: #e2e2e2;
+  cursor: pointer;
+}
+
+/* form section */
+.form-section {
+  width: 500px;
+  margin: 150px auto 0 auto;
+  text-align: center;
+}
+
+.form-input input {
+  width: 400px;
+  height: 50px;
+  border-radius: 3px;
+  border: 1px solid #f4f4f4;
+  font-size: 1rem;
+  margin-top: 10px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0 10px;
+  outline: none;
+}
+
+.form-input input:focus {
+  border-color: #d2d2d2;
+  box-shadow: 0 0 10px 5px rgba(0,0,0, 0.05);
+}
+
+.form-section form button {
+  height: 50px;
+  width: 400px;
+  outline: none;
+  border: 0;
+  border-radius: 3px;
+  background: #f00;
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+.form-section form button:hover {
+  cursor: pointer;
+}
+
+.invalid-input {
+  border-color: #f00 !important;
+}
+
+/* dashboard */
+.dashboard-header {
+  height: 50px;
+  background: #3389ff;
+  line-height: 50px;
+  padding: 0 20px;
+}
+
+.app-name {
+  width: 100px;
+  float: left;
+}
+
+.app-name a {
+  color: #fff;
+}
+
+.profile-menu {
+  color: #fff;
+  float: right;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-menu .username {
+  margin-right: 15px;
+}
+
+.profile-menu .avatar {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background: #fff;
+  margin-top: 7.5px;
+}
+
+.avatar img {
+  height: 35px;
+  width: 35px;
+}
+
+.page-body {
+  display: flex;
+  flex-direction: row;
+}
+
+.side-bar {
+  height: 100vh;
+  background: #3b3b3b;
+  width: 240px;
+  box-sizing: border-box;
+  color: #717171;
+}
+
+.side-bar .dashboard-menu {
+  padding: 20px;
+  text-transform: uppercase;
+  width: 100%;
+  margin-top: 20px;
+  box-sizing: border-box;
+
+}
+
+.side-menu {
+  width: 100%;
+  min-height: 100px;
+}
+
+.side-menu li {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  width: 100%;
+  border-top: 1px solid #4d4d4d;
+  box-sizing: border-box;
+  transition: .3s ease-in-out all;
+  text-transform: uppercase;
+  font-size: .8rem;
+}
+
+.side-menu li:last-child {
+  border-bottom: 1px solid #4d4d4d;
+}
+
+.side-menu li:hover {
+  border-left: 5px solid #3389ff;
+  color: #3389ff;
+}
+
+li i {
+  padding-right: 10px;
+}
+
+.main-view {
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.current-page-title {
+  height: 50px;
+  line-height:50px;
+  border-bottom: 1px solid #ebebeb;
+  padding-left: 20px;
+  color: #666;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.current-page-view {
+
+}
